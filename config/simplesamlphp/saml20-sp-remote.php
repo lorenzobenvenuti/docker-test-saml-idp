@@ -9,5 +9,6 @@ $metadata[getenv('SIMPLESAMLPHP_SP_ENTITY_ID')] = array(
     'AssertionConsumerService' => getenv('SIMPLESAMLPHP_SP_ASSERTION_CONSUMER_SERVICE'),
     'SingleLogoutService' => getenv('SIMPLESAMLPHP_SP_SINGLE_LOGOUT_SERVICE'),
     'validate.authnrequest' => TRUE,
-    'certData' => getenv('SIMPLESAMLPHP_SP_CERT_DATA')
+    'certData' => getenv('SIMPLESAMLPHP_SP_CERT_DATA'),
+    'signature.algorithm' => getenv('SIMPLESAMLPHP_SP_SIGNATURE_ALGORITHM') ? getenv('SIMPLESAMLPHP_SP_SIGNATURE_ALGORITHM') : 'http://www.w3.org/2000/09/xmldsig#rsa-sha1',
 );
