@@ -69,4 +69,7 @@ $metadata['__DYNAMIC:1__'] = array(
 		),
 	),
 	*/
+    
+    'SingleSignOnServiceBinding' => getenv('SIMPLESAMLPHP_IDP_BINDING') ? getenv('SIMPLESAMLPHP_IDP_BINDING') : 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+
 );
